@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    font-weight: 30;
+    overflow-x: hidden;
+}
+
+/* ---------------------------------------- TOPNAV ------------------------------- */
+
+#header {
+    background-color: #484D4F;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo_div {
+    position: absolute;
+    left: 0;
+    border-right: 1px solid #565B5D;
+    width: 6vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 0.05s ease-in-out;
+}
+
+#logo_div:hover {
+    background-color: rgb(40,40,40);
+}
+
+#logo {
+    height: 3vw;
+    width: 3vw;
+    margin: 0 auto;
+}
+
+#dropdown {
+    position: absolute;
+    width: 17vw;
+    font-size: 20px;
+    left: 6vw;
+    color: white;
+    text-align: center;
+    display: flex;
+    padding-left: 4vw;
+    align-items: center;
+    height: 100%;
+    transition: 0.05s ease-in-out;
+}
+
+#dropdown:hover {
+    background-color: rgb(40,40,40);
+}
+
+#gps_ico {
+    float: left;
+    width: 2vw;
+    height: 2vw;
+    padding: 3px;
+    box-sizing: border-box;
+    margin: 0 0.5vw 0 0vw;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+#down_ico {
+    width: 2vw;
+    height: 2vw;
+    padding: 8px 4px 4px;
+    box-sizing: border-box;
+    margin-left: 0.5vw;
+}
+
+input {
+    outline: none;
+    border: none;
+    padding: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#search {
+    position: absolute;
+    width: 47vw;
+    font-size: 14px;
+    left: 28vw;
+    background-color: white;
+    display: flex;
+    padding-left: 1vw;
+    align-items: center;
+    height: 60%;
+    border-radius: 3px;
+    float: left;
+}
+
+#search_ico {
+    position: absolute;
+    left: 75vw;
+    background-color: rgb(230,230,230);
+    width: 2.5vw;
+    height: 64%;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+}
+
+#signup {
+    position: absolute;
+    left: 79vw;
+    width: 13vw;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.05s ease-in-out;
+}
+
+#login {
+    position: relative;
+    margin-top: -25px;
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+#signdown_ico {
+    position: relative;
+    margin-left: 5px;
+    width: 1vw;
+    height: 1vw;
+}
+
+#signup:hover {
+    background-color: rgb(40,40,40);
+}
+
+#cart {
+    float: left;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    left: 92vw;
+    transition: 0.05s ease-in-out;
+    font-size: 15px;
+    color: white;
+    height: 100%;
+    border-left: 1px solid #565B5D;
+}
+
+#cart_ico {
+    width: 2vw;
+    height: 2vw;
+    float: left;
+    margin-right: 0.3vw;
+    position: relative;
+}
+
+#cart:hover {
+    background-color: rgb(40,40,40);
+}
+
+/* --------------------------------------- CONTAINER ------------------------------------------- */
+
+#container {
+    background-color: #F9F9F9;
+    position: absolute;
+    top: 9vh;
+    left: 0;
+    width: 100vw;
+    min-height: 91vh;
+}
