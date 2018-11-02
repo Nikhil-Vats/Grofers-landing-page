@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,600,900');
 
 body {
     margin: 0;
@@ -129,7 +129,7 @@ input:focus {
 #signup {
     position: absolute;
     left: 79vw;
-    width: 13vw;
+    width: 11vw;
     height: 100%;
     float: left;
     font-size: 15px;
@@ -169,8 +169,8 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8vw;
-    left: 92vw;
+    width: 9vw;
+    left: 90vw;
     transition: 0.05s ease-in-out;
     font-size: 15px;
     color: white;
@@ -336,4 +336,404 @@ input:focus {
     height: 100%;
     top: 0;
     left: 0;
+}
+
+.heading {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    left: 5vw;
+    margin: 2vh 0;
+    position: absolute;
+}
+
+.view_all {
+    color: #E96125;
+    font-size: 15px;
+    position: absolute;
+    right: 5vw;
+    margin: 2vh 0;
+    font-weight: 600;
+}
+
+.view_all:hover {
+    text-decoration: underline;
+}
+
+#promos {
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.next_slide {
+    position: absolute;
+    right: 0;
+    width: 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180,180,180);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.next_slide:hover {
+    background-color: rgb(150,150,150);
+}
+
+.next_slide img {
+    width: 2vw;
+    height: 2vw;
+    padding: 2px;
+    transform: rotate(-90deg);
+}
+
+.promo {
+    background-color: #3A4FBB;
+    padding-top: -2vh;
+    margin: 2vh 2vh 0 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 4px;
+    height: 100%;
+    width: 14vw;
+}
+
+.promo_heading {
+    margin: -4vh 0 0 0;
+    text-align: center;
+    font-size: 23px;
+    color: white;
+    font-weight: 900;
+}
+
+.promo_type {
+    margin: 0;
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    font-weight: 900;
+}
+
+.promo_details {
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    font-weight: 900;
+}
+
+.bank_logo {
+    width: 14vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    bottom: 0;
+    position: absolute;
+    border: 1px solid #F9F9F9;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.bank_logo >img {
+    width: 70%;
+    height: 95%;
+}
+
+#bachat {
+    position: relative;
+    margin-top: 11vh;
+    min-height: 50vh;
+    padding: 15px;
+    background-color: #FFD15D;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#bachat_details {
+    color: #E22255;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bachat_details :first-child {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0vh;
+    font-weight: 400;
+}
+
+#bachat_details > img {
+    width: 10vw;
+    height: 25vh;
+}
+
+#bachat_details a {
+    color: #F1976F;
+    text-decoration: none;
+    background-color: white;
+    width: 13vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#start_shopping {
+    width: 60%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bachat_offers {
+    position: relative;
+    display: flex;
+    background-color: white;
+    margin: 0 2vh;
+    border-radius: 4px;
+    width: 17vw;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.discount {
+    background-color: #F2FEF2;
+    color: #58AE24;
+    position: absolute;
+    left: 1vw;
+    top: 0vh;
+    min-width: 4vw;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #58AE24;
+    min-height: 2vh;
+    z-index: 10;
+}
+
+.bachat_offers img {
+    margin: 6vh auto 0;
+    width: 12vw;
+    height: 20vh;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.bachat_offers > img:hover {
+    transform: translateY(-7px);
+}
+
+.product_name {
+    margin-top: 1vh;
+    width: 15vw;
+    text-align: left;
+    font-size: 14px;
+}
+
+.quantity {
+    margin: 0vh 0  0 1vh;
+    font-size: 14px;
+    text-align: left;
+    width: 15vw;
+    color: rgb(150,150,150);
+}
+
+.add_to_cart {
+    width: 15vw;
+    margin-left: 0.8vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.prices {
+    position: relative;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.final_price {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.initial_price {
+    margin-left: 0;
+    margin-top: 0;
+    text-decoration-line: line-through;
+}
+
+.cart_btn {
+    position: relative;
+    margin-left: 3.3vh;
+    background-color: #C74B14;
+    color: white;
+    min-width: 8vw;
+    font-size: 13px;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.club_price {
+    width: 90%;
+    background-color: #EDFBFD;
+    color: #92DEE7;
+    border: 1px solid #92DEE7;
+    border-radius: 4px;
+    display: flex;
+    height: 4vh;
+    font-weight: 600;
+    font-size: 12px;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 2vh;
+}
+
+.club_price img {
+    width: 2vw;
+    height: 1.8vw;
+    position: relative;
+    top: -1.3vw;
+    left: -1vw;
+    transform: none;
+}
+
+#others {
+    position: relative;
+    margin-top: 11vh;
+    min-height: 49vh;
+    padding: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+#others > .bachat_offers {
+    border: 1px solid rgb(230,230,230);
+    margin: 0;
+    padding: 4px;
+    height: 100%;
+    border-radius: 0;
+    border-collapse: separate;
+    transition: 0.2s ease-in-out;
+}
+
+#others > .bachat_offers:hover {
+    border: 1px solid rgb(180,180,180)
+}
+
+#others .product_name, .quantity, .add_to_cart {
+    width: 14vw;
+}
+
+#categories2 {
+    margin-top: 11vh;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.category2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background-color: white;
+    width: 44vw;
+    margin: 1vw 1vw 0 0; 
+    cursor: pointer;
+}
+
+.category2:hover {
+    border: 1px solid rgb(190,190,190);
+}
+
+.grp_products {
+    position: absolute;
+    left: 1vw;
+    width: 13vw;
+    height: 22vh;
+}
+
+.category2_details {
+    display: flex;
+    flex-direction: column;
+    left: 6vw;
+    position: relative;
+    font-size: 20px;
+    width: 27vw;
+}
+
+.right_prod {
+    position: relative;
+    right: -6vw;
+    width: 2vw;
+    height: 5vh;
+}
+
+.off {
+    position: relative;
+    top: 6vh;
+    left: 1vw;
+    color: #58AE24;
+    font-weight: 900;
+    font-size: 12px;
+
+}
+
+.special_name {
+    position: relative;
+    left: 1vw;
+    top: 2.5vh;
+    font-size: 23px;
+    color: rgb(40,40,40);
+    font-weight: 600;
+}
+
+.special_descrip {
+    position: relative;
+    left: 1vw;
+    top: -2vh;
+    font-size: 15px;
+    color: rgb(40,40,40);
 }
