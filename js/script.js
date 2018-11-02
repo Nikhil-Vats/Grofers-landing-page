@@ -19,4 +19,37 @@ function swipeRight() {
     }
 }
 
+document.getElementById('left2_arrow').style.display = 'none';
+
+
+var bannerWidth = 0;
+
+function swipeBannerLeft() {
+    document.getElementById('right2_arrow').style.display = 'block';
+    var banners = document.getElementsByClassName('banner');
+    bannerWidth = bannerWidth + banners[0].clientWidth;
+    console.log(bannerWidth);
+    if(bannerWidth == 0) {
+        document.getElementById('left2_arrow').style.display = 'none';
+    }
+    for(var i=0;i<banners.length;i++) {
+        banners[i].style.transform = 'translateX('+ bannerWidth + 'px)';
+        banners[i].style.transition = '0.3s ease-in-out';
+    }
+}
+
+function swipeBannerRight() {
+    document.getElementById('left2_arrow').style.display = 'block';
+    var banners = document.getElementsByClassName('banner');
+    bannerWidth = bannerWidth - banners[0].clientWidth;
+    console.log(bannerWidth);
+    if(bannerWidth<-2500) {
+        document.getElementById('right2_arrow').style.display = 'none';
+    }
+    for(var i=0;i<banners.length;i++) {
+        banners[i].style.transform = 'translateX('+ bannerWidth + 'px)';
+        banners[i].style.transition = '0.3s ease-in-out';
+    }
+}
+
 console.log($('.product:visible').length);

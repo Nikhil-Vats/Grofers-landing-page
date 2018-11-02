@@ -113,10 +113,10 @@ input:focus {
 
 #search_ico {
     position: absolute;
-    left: 75vw;
+    left: 74vw;
     background-color: rgb(230,230,230);
     width: 2.5vw;
-    height: 64%;
+    height: 60%;
     padding: 5px;
     box-sizing: border-box;
     cursor: pointer;
@@ -238,6 +238,7 @@ input:focus {
     border-radius: 50%;
     padding: 4px;
     background-color: rgb(200,200,200);
+    cursor: pointer;
 }
 
 #right_arrow {
@@ -247,6 +248,7 @@ input:focus {
     border-radius: 50%;
     padding: 4px;
     background-color: rgb(200,200,200);
+    cursor: pointer;
 }
 
 .product {
@@ -287,6 +289,8 @@ input:focus {
     border-radius: 50%;
     height: 3vw;
     width: 3vw;
+    cursor: pointer;
+    z-index: 10;
 }
 
 #right2_arrow {
@@ -299,4 +303,37 @@ input:focus {
     border-radius: 50%;
     height: 3vw;
     width: 3vw;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#banners {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+.banner {
+    display: block;
+    position: relative;
+    float: left;
+    top: 0;
+    width: 90vw;
+    height: 100%;
+}
+
+.offer {
+    position: relative;
+    width: 80vw;
+    margin: 0 5vw;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
