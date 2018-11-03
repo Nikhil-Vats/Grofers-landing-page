@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=No">
 </head>
 <body>
+    <div id="overshadow" style="position: absolute;z-index: -90;height: 100vh;width: 100vw;left: 0;top: 0;opacity: 0;background-color: rgb(100,100,100);">
+    </div>
     <div id="header">
         <div id="logo_div"><img id="logo" src="./images/logo.png" alt=""/></div>
         <div id="dropdown">
@@ -37,7 +39,29 @@
             </div>
     </div>
     <div id="m_header">
-        
+        <div class="top_top">
+            <img id="menu" src="images/menu.png" onclick="openSidenav()">
+            <p>Search Location</p>
+            <img id="right1" src="images/profile.png">
+            <img id="right2" src="images/cart.png">
+        </div>
+        <div class="top_bottom">
+            <div class="offer_btn">Offers</div>
+            <div class="search">
+                <input type="text" id="search2" placeholder="Search for products" />
+                <img src="./images/search.png" id="search_ico2">
+            </div>
+        </div>
+    </div>
+    <div id="sidenav">
+        <div>Welcome</div>
+        <div>Login</div>
+        <div>My Addresses</div>
+        <div>My Orders</div>
+        <div>My Cart</div>
+        <div>FAQ</div>
+        <div>Blog</div>
+        <img src="images/close.png" onclick="closeSidenav()">
     </div>
     <div id="container">
         <div class="content" id="products">

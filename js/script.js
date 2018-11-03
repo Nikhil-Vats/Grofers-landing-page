@@ -51,3 +51,17 @@ function swipeBannerRight() {
         banners[i].style.transition = '0.3s ease-in-out';
     }
 }
+
+function openSidenav() {
+    var sidenav = document.getElementById('sidenav');
+    sidenav.style.left = '0vw';
+    document.getElementById('overshadow').style.zIndex = '90';
+    document.getElementById('overshadow').style.opacity = '0.7';
+}
+
+function closeSidenav() {
+    var sidenav = document.getElementById('sidenav');
+    sidenav.style.left = '-70vw';
+    document.getElementById('overshadow').style.zIndex = '-90';
+    document.getElementById('overshadow').style.opacity = '0.7';
+}

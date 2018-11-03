@@ -16,7 +16,7 @@ body, html {
 /* ---------------------------------------- TOPNAV ------------------------------- */
 
 #header {
-    background-color: #484D4F;
+    background-color: rgb(28, 34, 36);;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -196,6 +196,7 @@ input:focus {
     background-color: #F9F9F9;
     position: absolute;
     top: 9vh;
+    transition: 0.3s ease-in-out;
     left: 0;
     width: 100vw;
     min-height: 91vh;
@@ -819,10 +820,195 @@ input:focus {
     margin-bottom: 5vh;
 }
 
+/* ---------------------------------- MOBILE HEADER ------------------------------------------------------- */
+
+#m_header {
+    display: none;
+    width: 100vw;
+    left: 0;
+    height: 18vh;
+    background: rgb(28, 34, 36);
+    top: 0;
+    position: absolute;
+}
+
+.top_top {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 1vh;
+    width: 98vw;
+    left: 1vw;
+    align-items: center;
+}
+
+#menu {
+    position: absolute;
+    left: 1vw;
+    width: 3vw;
+    height: 5vh;
+    z-index: 200;
+}
+
+.top_top p {
+    font-size: 10px;
+    float: left;
+}
+
+#right1 {
+    position: absolute;
+    right: 6vw;
+    top: 1vh;
+    width: 3vw;
+    height: 5vh;
+}
+
+#right2 {
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    width: 3vw;
+    height: 5vh;   
+}
+
+.top_bottom {
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.offer_btn {
+    position: relative;
+    left: 1vw;
+    top: 7vh;
+    justify-content: center;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: 10vw;
+    background: white;
+    color: black;
+    font-size: 12px;
+}
+
+.search {
+    position: relative;
+    left: 1vw;
+    top: 5vh;
+    width: 87vw;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    font-size: 10px;
+}
+
+#search2 {
+    position: relative;
+    left: 1vw;
+    top: 2vh;
+    justify-content: center;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    width: 81vw;
+    background: white;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+#search_ico2 {
+    position: relative;
+    left: 0;
+    top: 2vh;
+    background-color: rgb(230,230,230);
+    width: 5vw;
+    height: 6vh;
+    padding: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    border-radius: 3px;
+    align-items: center;
+}
+
+#sidenav {
+    left: -70vw;
+    position: absolute;
+    height: 100vh;
+    width: 70vw;
+    top: 0;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+
+#sidenav > div {
+    margin: 4vh;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(70,70,70);
+    height: 14vh;
+    left: 1vw;
+}
+
+#sidenav > img {
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    left: 65vw;
+    top: 1vh;
+}
+/* ------------------------------------ MEDIA QUERIES -------------------------------------------------------- */
+
 @media only screen and (max-width: 1000px) {
-    body {
-        width: 100vw;
+    #left_arrow, #right_arrow {
+        display: none;
     }
+    #scroll {
+        overflow-x: auto;
+    }
+    .product {
+        transform: translateX(1230px);
+        min-width: 22vw;
+    }
+    #bachat_details {
+        width: 30vw;
+        margin: 0 10vh 0 10vh;
+        left: 8vh;
+    }
+    #start_shopping {
+        width: 80%;
+    }
+    #bachat_details a {
+        min-width: 20vw;
+    }
+    #bachat > .bachat_offers{
+        transform: translateX(0px);
+    }
+    #m_header {
+        display: block;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #container {
+        top: 18vh;
+    }
+
     .category2 {
         width: 100%;
         height: 28vh;
@@ -862,5 +1048,52 @@ input:focus {
 
     .promo {
         min-width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .bachat_offers {
+        min-width: 30vw;
+    }
+    .cart_btn {
+        min-width: 12vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .product {
+        transform: translateX(830px);
+        min-width: 22vw;
+    }
+    #bachat > .bachat_offers{
+        transform: translateX(200px);
+    }
+    .bachat_offers {
+        min-width: 40vw;
+    }
+    .bachat_offers > img {
+        width: 18vw;
+    }
+    .product_name, .quantity, .prices {
+        width: 25vw;
+    }
+    .cart_btn {
+        min-width: 14vw;
+    }
+    #right1, #right2 {
+        width: 5vw;
+    }
+    #right1 {
+        right: 9vw;
+    }
+    .prices {
+        position: relative;
+        left: -11vw;
+    }
+    #right2 {
+        right: 2vw;
+    }
+    #others .product_name, .quantity, .initial_price, .final_price {
+        width: 90%;
     }
 }
