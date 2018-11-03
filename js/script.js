@@ -51,5 +51,3 @@ function swipeBannerRight() {
         banners[i].style.transition = '0.3s ease-in-out';
     }
 }
-
-console.log($('.product:visible').length);
