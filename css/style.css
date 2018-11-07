@@ -1131,6 +1131,12 @@ input:focus {
     .bachat_offers .cart_btn {
         margin-left: 5vw;
     }
+    #payment {
+        flex-wrap: wrap;
+    }
+    #payment img {
+        width: 10vw;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1144,27 +1150,24 @@ input:focus {
     .bachat_offers {
         min-width: 40vw;
     }
-    .bachat_offers > img {
-        width: 18vw;
-    }
-    .product_name, .quantity, .prices {
+    /* .product_name, .quantity, .prices {
         width: 25vw;
-    }
+    } */
     #search_ico2 {
         width: 6vw;
     }
     .cart_btn {
         min-width: 14vw;
+        left: 6vw;
+    }
+    #bachat .cart_btn {
+        left: -2vw;
     }
     #right1, #right2 {
-        width: 6vw;
+        width: 5.5vw;
     }
     #right1 {
         right: 11vw;
-    }
-    .prices {
-        position: relative;
-        left: -11vw;
     }
     #right2 {
         right: 2vw;
@@ -1174,4 +1177,76 @@ input:focus {
     } */
 }
 
-@
+@media only screen and (max-width: 550px) {
+    .bachat_offers > img {
+        width: 70%;
+    }
+    .description {
+        font-size: 12px;
+    }
+    #search_ico2 {
+        width: 7vw;
+    }
+    #loc {
+        left: 8vw;
+    }
+    #menu {
+        width: 5vw;
+        height: 7vw;
+    }
+    #bachat > .bachat_offers{
+        transform: translateX(190px);
+        min-width: 35vw;
+    }
+    #promos {
+        width: 100vw;
+        overflow-y: hidden;
+    }
+    .cart_btn {
+        min-width: 18vw;
+        left: 1vw;
+    }
+    #bachat .cart_btn {
+        min-width: 18vw;
+    }
+    .promo {
+        min-width: 30vw;
+    }
+    #others {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #bachat > .bachat_offers{
+        transform: translateX(210px);
+        min-width: 40vw;
+    }
+    .bachat_offers > img {
+        width: 70%;
+    }
+    #bachat .cart_btn {
+        left: 0vw;
+        min-width: 19vw;
+    }
+    .cart_btn {
+        left: -2vw;
+        min-width: 19vw;
+    }
+    .special_descrip {
+        font-size: 13px;
+    }
+    .right_prod {
+        width: 4vw;
+    }
+    .promo {
+        min-width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #bachat > .bachat_offers{
+        transform: translateX(190px);
+        min-width: 40vw;
+    }
+}
