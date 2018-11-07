@@ -114,7 +114,7 @@ input:focus {
 #search_ico {
     position: absolute;
     left: 74vw;
-    background-color: rgb(230,230,230);
+    background-color: #F26E21;
     width: 2.5vw;
     height: 60%;
     padding: 5px;
@@ -553,7 +553,7 @@ input:focus {
 
 .product_name {
     margin-top: 1vh;
-    width: 15vw;
+    width: 90%;
     text-align: left;
     font-size: 14px;
 }
@@ -664,7 +664,7 @@ input:focus {
 }
 
 #others .product_name, .quantity, .add_to_cart {
-    width: 14vw;
+    width: 90%;
 }
 
 #categories2 {
@@ -829,7 +829,8 @@ input:focus {
     height: 18vh;
     background: rgb(28, 34, 36);
     top: 0;
-    position: absolute;
+    z-index: 99;
+    position: fixed;
 }
 
 .top_top {
@@ -848,6 +849,7 @@ input:focus {
     width: 3vw;
     height: 5vh;
     z-index: 200;
+    transition: 0.3s ease-in-out;
 }
 
 .top_top p {
@@ -880,6 +882,13 @@ input:focus {
     align-items: center;
 }
 
+#loc {
+    color: white;
+    font-size: 1.5vw;
+    position: relative;
+    left: 5vw;
+}
+
 .offer_btn {
     position: relative;
     left: 1vw;
@@ -889,7 +898,7 @@ input:focus {
     display: flex;
     align-items: center;
     border-radius: 4px;
-    width: 10vw;
+    width: 14vw;
     background: white;
     color: black;
     font-size: 12px;
@@ -899,7 +908,7 @@ input:focus {
     position: relative;
     left: 1vw;
     top: 5vh;
-    width: 87vw;
+    width: 82vw;
     float: left;
     display: flex;
     flex-direction: row;
@@ -928,8 +937,8 @@ input:focus {
     position: relative;
     left: 0;
     top: 2vh;
-    background-color: rgb(230,230,230);
-    width: 5vw;
+    background-color: #F26E21;
+    width: 4vw;
     height: 6vh;
     padding: 3px;
     box-sizing: border-box;
@@ -955,12 +964,23 @@ input:focus {
 }
 
 #sidenav > div {
-    margin: 2vh;
+    margin: 2vh 0;
+    display: flex;
+    padding-left: 2vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     font-size: 20px;
     color: rgb(70,70,70);
     height: 14vh;
     left: 1vw;
+}
+
+#sidenav > div img {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
 }
 
 #sidenav > img {
@@ -994,8 +1014,8 @@ input:focus {
     #bachat_details a {
         min-width: 20vw;
     }
-    #bachat > .bachat_offers{
-        transform: translateX(0px);
+    #bachat > .bachat_offers, #bachat_details {
+        transform: translateX(0px); 
     }
     #m_header {
         display: block;
@@ -1055,8 +1075,61 @@ input:focus {
     .bachat_offers {
         min-width: 30vw;
     }
+    #bachat > .bachat_offers {
+        min-width: 30vw;
+    }
+    #bachat:first-child {
+        min-width: 30vw;
+        margin-right: 2vw
+    }
     .cart_btn {
         min-width: 12vw;
+        margin-left: 7.5vw;
+    }
+    #bachat > .bachat_offers, #bachat_details {
+        transform: translateX(230px); 
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    #bachat_details {
+        display: none;
+    }    
+    #bachat > .bachat_offers {
+        transform: translateX(160px);
+    }
+    .promo_details {
+        display: none;
+    }
+    .promo_heading {
+       margin-top: -9vh;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #right1, #right2 {
+        width: 4vw;
+    }
+    #search_ico2 {
+        width: 5vw;
+    }
+    #loc {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .bachat_offers > img {
+        width: 17vw;
+    }
+    #right1, #right2 {
+        width: 5vw;
+    }
+    #search_ico2 {
+        width: 5vw;
+    }
+    .bachat_offers .cart_btn {
+        margin-left: 5vw;
     }
 }
 
@@ -1066,7 +1139,7 @@ input:focus {
         min-width: 22vw;
     }
     #bachat > .bachat_offers{
-        transform: translateX(200px);
+        transform: translateX(160px);
     }
     .bachat_offers {
         min-width: 40vw;
@@ -1077,14 +1150,14 @@ input:focus {
     .product_name, .quantity, .prices {
         width: 25vw;
     }
+    #search_ico2 {
+        width: 6vw;
+    }
     .cart_btn {
         min-width: 14vw;
     }
-    #menu {
-        width: 9vw;
-    }
     #right1, #right2 {
-        width: 9vw;
+        width: 6vw;
     }
     #right1 {
         right: 11vw;
@@ -1096,7 +1169,9 @@ input:focus {
     #right2 {
         right: 2vw;
     }
-    #others .product_name, .quantity, .initial_price, .final_price {
+    /* #others .product_name, .quantity, .initial_price, .final_price {
         width: 90%;
-    }
+    } */
 }
+
+@

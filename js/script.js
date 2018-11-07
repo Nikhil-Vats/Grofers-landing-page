@@ -56,6 +56,7 @@ function openSidenav() {
     var sidenav = document.getElementById('sidenav');
     sidenav.style.left = '0vw';
     document.getElementById('overshadow').style.zIndex = '90';
+    document.getElementById('menu').style.opacity = '0';
     document.getElementById('overshadow').style.opacity = '0.7';
 }
 
@@ -63,5 +64,6 @@ function closeSidenav() {
     var sidenav = document.getElementById('sidenav');
     sidenav.style.left = '-70vw';
     document.getElementById('overshadow').style.zIndex = '-90';
+    document.getElementById('menu').style.opacity = '1';
     document.getElementById('overshadow').style.opacity = '0.7';
 }
