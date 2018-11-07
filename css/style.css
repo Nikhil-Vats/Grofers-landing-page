@@ -1278,4 +1278,15 @@ input:focus {
     #search_ico2 {
         width: 10vw;
     }
+    .grp_products {
+        width: 30vw;
+        height: 18vh;
+    }
+    .category2_details {
+        width: 52vw;
+        left: 15vw;
+    }
+    .special_descrip {
+        font-size: 12px;
+    }
 }
