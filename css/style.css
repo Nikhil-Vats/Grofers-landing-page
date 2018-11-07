@@ -826,7 +826,7 @@ input:focus {
     display: none;
     width: 100vw;
     left: 0;
-    height: 18vh;
+    height: 16vh;
     background: rgb(28, 34, 36);
     top: 0;
     z-index: 99;
@@ -875,7 +875,7 @@ input:focus {
 
 .top_bottom {
     position: relative;
-    top: 1vh;
+    top: 2vh;
     left: 1vw;
     display: flex;
     flex-direction: row;
@@ -1251,5 +1251,31 @@ input:focus {
     #bachat > .bachat_offers{
         transform: translateX(190px);
         min-width: 40vw;
+    }
+    .club_price img {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #right1, #right2 {
+        width: 8vw;
+    }
+    .bachat_offers{
+        min-width: 45vw;
+    }
+    #bachat > .bachat_offers{
+        transform: translateX(210px);
+        min-width: 45vw;
+    }
+    .cart_btn {
+        min-width: 21vw;
+    }
+    #bachat .cart_btn {
+        min-width: 21vw;
+    }
+    #search_ico2 {
+        width: 10vw;
     }
 }
