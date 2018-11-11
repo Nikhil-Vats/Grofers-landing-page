@@ -1072,6 +1072,9 @@ input:focus {
 }
 
 @media only screen and (max-width: 900px) {
+    .product {
+        transform: translateX(1200px);
+    }
     .bachat_offers {
         min-width: 30vw;
     }
@@ -1092,6 +1095,9 @@ input:focus {
 }
 
 @media only screen and (max-width: 825px) {
+    .product {
+        transform: translateX(1100px);
+    }
     #bachat_details {
         display: none;
     }    
@@ -1107,6 +1113,9 @@ input:focus {
 }
 
 @media only screen and (max-width: 800px) {
+    .product {
+        transform: translateX(1050px);
+    }
     #right1, #right2 {
         width: 4vw;
     }
@@ -1119,6 +1128,9 @@ input:focus {
 }
 
 @media only screen and (max-width: 650px) {
+    .product {
+        transform: translateX(900px);
+    }
     .bachat_offers > img {
         width: 17vw;
     }
@@ -1140,6 +1152,10 @@ input:focus {
 }
 
 @media only screen and (max-width: 600px) {
+    .club_price img {
+        width: 14px;
+        height: 14px;
+    }
     .product {
         transform: translateX(830px);
         min-width: 22vw;
@@ -1178,6 +1194,14 @@ input:focus {
 }
 
 @media only screen and (max-width: 550px) {
+    #offers {
+        width: 90vw;
+        height: 30vh;
+    }
+    .product {
+        transform: translateX(780px);
+        min-width: 22vw;
+    }
     .bachat_offers > img {
         width: 70%;
     }
@@ -1217,7 +1241,26 @@ input:focus {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    #offers {
+        width: 90vw;
+        height: 27vh;
+    }
+    .product {
+        transform: translateX(730px);
+        min-width: 22vw;
+    }
+}    
+
 @media only screen and (max-width: 450px) {
+    #offers {
+        width: 90vw;
+        height: 25vh;
+    }
+    .product {
+        transform: translateX(680px);
+        min-width: 22vw;
+    }
     #bachat > .bachat_offers{
         transform: translateX(210px);
         min-width: 40vw;
@@ -1248,17 +1291,33 @@ input:focus {
 }
 
 @media only screen and (max-width: 400px) {
+    #offers {
+        width: 90vw;
+        height: 22vh;
+    }
+    .product {
+        transform: translateX(630px);
+        min-width: 22vw;
+    }
     #bachat > .bachat_offers{
         transform: translateX(190px);
         min-width: 40vw;
     }
     .club_price img {
-        width: 2vw;
-        height: 2vw;
+        width: 14px;
+        height: 14px;
     }
 }
 
 @media only screen and (max-width: 365px) {
+    #offers {
+        width: 90vw;
+        height: 19vh;
+    }
+    .product {
+        transform: translateX(595px);
+        min-width: 22vw;
+    }
     #right1, #right2 {
         width: 8vw;
     }
@@ -1288,5 +1347,9 @@ input:focus {
     }
     .special_descrip {
         font-size: 12px;
+    }
+    .club_price img {
+        width: 14px;
+        height: 14px;
     }
 }
